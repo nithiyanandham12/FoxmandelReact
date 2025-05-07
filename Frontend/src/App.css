@@ -1,0 +1,165 @@
+/* App.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+  
+  /* File upload button styling */
+  .file-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+  }
+  
+  .file-upload-container:hover {
+    border-color: #1976d2;
+    background-color: #f0f7ff;
+  }
+  
+  /* PDF viewer */
+  .pdf-container {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  /* Markdown container */
+  .markdown-container {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .markdown-container h1,
+  .markdown-container h2,
+  .markdown-container h3,
+  .markdown-container h4 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+  }
+  
+  .markdown-container table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+  }
+  
+  .markdown-container th,
+  .markdown-container td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+  }
+  
+  .markdown-container th {
+    background-color: #f2f2f2;
+    font-weight: 500;
+  }
+  
+  .markdown-container tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+  
+  /* Progress indicators */
+  .progress-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  /* OCR text editor */
+  .text-editor {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: monospace;
+    resize: vertical;
+    min-height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Page navigation */
+  .page-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .page-indicator {
+    margin: 0 15px;
+    font-weight: 500;
+  }
+  
+  /* Card styling */
+  .info-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info-card-content {
+    flex-grow: 1;
+  }
+  
+  /* Step content animations */
+  .step-content {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Success indicator */
+  .success-icon {
+    color: #4caf50;
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+  
+  /* Error indicator */
+  .error-icon {
+    color: #f44336;
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+  
+  /* Custom scroll bar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
